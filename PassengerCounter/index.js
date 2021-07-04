@@ -6,27 +6,27 @@
 //console.log(myDogAge)
 //To mass comment, select text and  press Ctrl+K+C
 
-let count = 0
-let countEl = document.getElementById("count-el")
-document.getElementById("increment-btn")
-let saveMsg = document.getElementById("save-msg")
+let count = 0;
+let countEl = document.getElementById("count-el");
+document.getElementById("increment-btn");
+let saveMsg = document.getElementById("save-msg");
 //document.getElementById("clear-btn")
-console.log(count)
+console.log(count);
 
 function increment() {
-  count += 1
-  countEl.textContent = count
+  count += 1;
+  countEl.textContent = count;
   //console.log("The Increment button was clicked");
 }
 
 function saveEl() {
   console.log("The save button was clicked " + count);
-  saveMsg.textContent += " " + count + "| "
-  clearEl()
+  saveMsg.textContent += " " + count + "| ";
+  clearEl();
 }
 
 function clearEl() {
-  count = 0
-  countEl.textContent = 0
+  count = 0;
+  countEl.textContent = 0;
   console.log("The count was cleared.");
 }
