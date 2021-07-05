@@ -14,18 +14,18 @@ function startGame() {
   hitBtn.style.display = "inline";
   startBtn.style.display = "none";
   if(count) {
-    let firstCard = Math.random() * 10;
-    let secondCard = Math.random() * 10;
-    let thirdCard = Math.random() * 10;
-    let fourthCard = Math.random() * 10;
+    let firstCard = Math.random() * 10 + 1;
+    let secondCard = Math.random() * 10 + 1;
+    let thirdCard = Math.random() * 10 + 1;
+    let fourthCard = Math.random() * 10 + 1;
     player = Math.floor(firstCard + secondCard);
     dealer = Math.floor(thirdCard + fourthCard);
     count = false;
     res.textContent = "Your Sum: "+ player + " | Dealer's Sum: " + dealer
   }
   else {
-    player += Math.floor(Math.random() * 10);
-    dealer += Math.floor(Math.random() * 10);
+    player += Math.floor(Math.random() * 10 + 1);
+    dealer += Math.floor(Math.random() * 10 + 1);
     res.textContent = "Your Sum: "+ player + " | Dealer's Sum: " + dealer
   }
   // Checking Dealers status
